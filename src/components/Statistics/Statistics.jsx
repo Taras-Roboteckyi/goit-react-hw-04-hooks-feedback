@@ -1,5 +1,9 @@
-import PropTypes from 'prop-types';
-import { StatisticListStyle, StatisticItem, StatisticValues } from './Statistic.styled';
+import PropTypes from "prop-types";
+import {
+  StatisticListStyle,
+  StatisticItem,
+  StatisticValues,
+} from "./Statistic.styled";
 
 export default function Statistics(props) {
   const { good, neutral, bad, total, positivePercentage } = props;
@@ -18,7 +22,9 @@ export default function Statistics(props) {
         <StatisticValues>Total: {total} </StatisticValues>
       </StatisticItem>
       <StatisticItem>
-        <StatisticValues>Positive feedback: {positivePercentage} </StatisticValues>
+        <StatisticValues>
+          Positive feedback: {positivePercentage}{" "}
+        </StatisticValues>
       </StatisticItem>
     </StatisticListStyle>
   );
